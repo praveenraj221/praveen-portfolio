@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Jacques+Francois&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8db700d7d0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1 class="p">P<span class="raj">RAVEEN RAJ A</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Welcome, I'm <span>Praveen Raj A</span></h1>
+            </div>
+        </div>
+    </div>
+<!-------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1.png.png.png" >
+                </div>
+                 <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>My portfolio website showcases my expertise as a web developer, featuring a diverse<br> range of projects that highlight my skills in designing and developing compelling digital solutions.<br> With a keen eye for detail and a passion for innovation,I strive to deliver exceptional results that<br>exceed client expectations and drive business success.Explore my portfolio to see how I can help<br> bring your web projects to life</p>
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Html,Css,Javascript,Mysql,Jquery</li>
+                        <li><span>Programming Language</span><br>Java</li>
+                        <li><span>Communication Skills</span><br>English</li>
+    
+                    </ul>
+                </div>
+        
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024</span><br>Internship at Codsoft</li>                     
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>10TH-Mahatma Montessori School(CBSE)</li>
+                        <li><span>2022</span><br>12TH-Mahatma Montessori School(CBSE)</li>
+                        <li><span>2022-2026</span><br>B.Tech in PSNA College of engineering and technology</li>
+                    </ul>
+                    <div id="about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="about-col-1">
+                                   <!-- <img src="1.png" alt="Profile Picture">---->
+                                </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------Services--------->
+
+<div id="Services">
+    <div class="container">
+        <h1 class="titile">My Services</h1>
+        <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devlopement</h2>
+                <P>I'm praveen, a web developer fluent in HTML, CSS, and JavaScript.I specialize in crafting user-friendly websites, staying current with industry trends to deliver innovative solutions. Let's create together!</P>
+                <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+                <p>Java is a versatile programming language known for its portability and wide usage in developing various applications, including web, mobile, and enterprise solutions.</p>
+                <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-people-arrows"></i>
+                <h2>Communication</h2>
+                <p>Communication is essential for effective interaction and understanding. It involves conveying messages clearly, actively listening, and fostering mutual understanding to build strong relationships and achieve common goals.</p>
+                <a href="#">Learn more</a>
+             </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Portfolio---------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My learning process</h1>
+        <div class="work-list">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="progress-bar">
+                    <div class="progress" id="html-progress"></div>
+                    <div class="percentage">98%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress-bar">
+                    <div class="progress" id="css-progress"></div>
+                    <div class="percentage">95%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress" id="js-progress"></div>
+                    <div class="percentage">80%</div>
+                </div>
+            </div>
+            
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------Contact------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>praveenraj2905@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9944500943</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/__.prxveen.__?igsh=MjU1Yjl6aXVpcTVz&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/qr/KCRMLU4EAC65H1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/praveen-raj-a-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/praveenraj221"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Enter your email here">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btnn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>2024 Personal Portfolio. All rights reserved. Praveen.</p>
+    </div>
+</div>
+
+
+    <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+       // Update the width of progress bars based on skill percentage
+// Update the width of progress bars based on skill percentage
+document.getElementById('html-progress').style.width = '98%'; // Example percentage
+document.getElementById('css-progress').style.width = '95%'; // Example percentage
+document.getElementById('js-progress').style.width = '80%'; // Example percentage
+
+       
+ 
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

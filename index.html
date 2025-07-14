@@ -142,7 +142,15 @@ Whether it's crafting responsive interfaces or contributing to collaborative pro
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My learning process</h1>
+        <br>
         <div class="work-list">
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="progress-bar">
+                    <div class="progress" id="java-progress"></div>
+                    <div class="percentage">100%</div>
+                </div>
+            </div>
             <div class="skill">
                 <div class="skill-name">HTML</div>
                 <div class="progress-bar">
@@ -179,30 +187,37 @@ Whether it's crafting responsive interfaces or contributing to collaborative pro
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>praveenraj2905@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>9944500943</p>
+                <p><i class="fa-solid fa-envelope"></i> praveenraj2905@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9944500943</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/__.prxveen.__?igsh=MjU1Yjl6aXVpcTVz&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://wa.me/qr/KCRMLU4EAC65H1"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="https://www.linkedin.com/in/praveen-raj-a-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/praveenraj221"><i class="fa-brands fa-square-github"></i></a>
                 </div>
-                <a href="" class="btn btn2">Download CV</a>
+                <a href="assets/Praveen_Raj_Resume.pdf" class="btn btn2" download>Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name">
-                    <input type="email" name="email" placeholder="Enter your email here">
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <form action="https://formspree.io/f/xyzpgvkn" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Enter your email here" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    
+                    <!-- Hidden spam filter and redirect -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
                     <button class="btnn" type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>2024 Personal Portfolio. All rights reserved. Praveen.</p>
-    </div>
+
+
+  
 </div>
+
+
 
 
     <script>
@@ -222,23 +237,34 @@ Whether it's crafting responsive interfaces or contributing to collaborative pro
 
        // Update the width of progress bars based on skill percentage
 // Update the width of progress bars based on skill percentage
-document.getElementById('html-progress').style.width = '98%'; // Example percentage
-document.getElementById('css-progress').style.width = '95%'; // Example percentage
-document.getElementById('js-progress').style.width = '80%'; // Example percentage
+document.getElementById('java-progress').style.width = '100%'; // Example percentage
+document.getElementById('html-progress').style.width = '100%'; // Example percentage
+document.getElementById('css-progress').style.width = '100%'; // Example percentage
+document.getElementById('js-progress').style.width = '100%'; // Example percentage
 
        
  
     </script>
 
     <script>
+  // Navigation menu functions
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+  function closemenu() {
+    sidemenu.style.right = "-200px";
+  }
 
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+  // Toggle chatbot visibility
+  function toggleChatbot() {
+    const chatbotBox = document.getElementById("chatbotBox");
+    chatbotBox.style.display = chatbotBox.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Send message to backend and update UI
+  
+</script>
+
 </body>
 </html>

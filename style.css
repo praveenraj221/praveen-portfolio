@@ -382,6 +382,84 @@ nav .fa-solid {
     display: none;
 }
 
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chatbot-toggle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-box {
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+}
+
+.chatbot-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  height: 300px;
+}
+
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 680px) {
     .header {
         background-image: url(phone.png.png);

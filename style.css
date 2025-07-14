@@ -97,16 +97,28 @@ nav ul li a:hover::after{
 
 
 /*-----About------*/
+.about-col-1 {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-col-2 {
+  flex: 2;
+  min-width: 300px;
+}
 
 #about{
     padding: 80px 0;
     color: #ababab;
 }
 
-img{
-    width: 500px;
-    height: 900px;
+.about-col-1 img {
+    width: 100%;              /* Take up full width of its container */
+    max-width: 300px;         /* Set a limit to avoid too large images */
+    height: auto;             /* Maintain natural aspect ratio */
     border-radius: 20px;
+    display: block;           /* Removes small default spacing below image */
+    object-fit: cover;        /* Optional: crops excess if needed */
 }
 
 .row{
@@ -418,6 +430,7 @@ nav .fa-solid {
         font-size: 40px;
 
     }
+
 
     .about-col-1 , .about-col-2{
        flex-basis: 100%;
